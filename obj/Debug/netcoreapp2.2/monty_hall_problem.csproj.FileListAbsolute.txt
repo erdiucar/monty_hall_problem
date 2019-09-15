@@ -1,0 +1,11 @@
+D:\OneDrive\0- KODLARIM\Github Repos\monty_hall_problem\bin\Debug\netcoreapp2.2\monty_hall_problem.deps.json
+D:\OneDrive\0- KODLARIM\Github Repos\monty_hall_problem\bin\Debug\netcoreapp2.2\monty_hall_problem.runtimeconfig.json
+D:\OneDrive\0- KODLARIM\Github Repos\monty_hall_problem\bin\Debug\netcoreapp2.2\monty_hall_problem.runtimeconfig.dev.json
+d:\OneDrive\0- KODLARIM\Github Repos\monty_hall_problem\bin\Debug\netcoreapp2.2\monty_hall_problem.dll
+d:\OneDrive\0- KODLARIM\Github Repos\monty_hall_problem\bin\Debug\netcoreapp2.2\monty_hall_problem.pdb
+d:\OneDrive\0- KODLARIM\Github Repos\monty_hall_problem\obj\Debug\netcoreapp2.2\monty_hall_problem.csprojAssemblyReference.cache
+d:\OneDrive\0- KODLARIM\Github Repos\monty_hall_problem\obj\Debug\netcoreapp2.2\monty_hall_problem.csproj.CoreCompileInputs.cache
+d:\OneDrive\0- KODLARIM\Github Repos\monty_hall_problem\obj\Debug\netcoreapp2.2\monty_hall_problem.AssemblyInfoInputs.cache
+d:\OneDrive\0- KODLARIM\Github Repos\monty_hall_problem\obj\Debug\netcoreapp2.2\monty_hall_problem.AssemblyInfo.cs
+d:\OneDrive\0- KODLARIM\Github Repos\monty_hall_problem\obj\Debug\netcoreapp2.2\monty_hall_problem.dll
+d:\OneDrive\0- KODLARIM\Github Repos\monty_hall_problem\obj\Debug\netcoreapp2.2\monty_hall_problem.pdb
