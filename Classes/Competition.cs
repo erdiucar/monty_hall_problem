@@ -25,13 +25,13 @@ namespace monty_hall_problem
             // Competition repeat
             for (int i = 0; i < Count; i++)
             {
-                Doors doors = new Doors(DoorsCount);
+                Stage stage = new Stage(DoorsCount);
                 Competitor competitor = new Competitor();
 
-                competitor.PickADoor(doors);
+                competitor.PickADoor(stage);
 
                 // If the car is behind the picked door, increase staying wins, else increase changing wins
-                if (competitor.PickedDoor.Number == doors.CarDoorNumber)
+                if (competitor.PickedDoor.Number == stage.CarDoorNumber)
                     Statistics.WinningCountWhenStayOnThePickedDoor++;
                 else
                     Statistics.WinningCountWhenChangeThePickedDoor++;

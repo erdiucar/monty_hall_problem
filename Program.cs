@@ -12,7 +12,7 @@ namespace monty_hall_problem
                 competition.Start();
 
                 CompetitionConsole competitionConsole = new CompetitionConsole(competition);
-                competitionConsole.Write();
+                competitionConsole.WriteStatistics();
             }
             catch (Exception e)
             {

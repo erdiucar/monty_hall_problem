@@ -11,27 +11,19 @@ namespace monty_hall_problem
             Competition = competition;
         }
 
-        public void Write()
+        public void WriteStatistics()
         {
-            for (int i = 0; i < 2; i++)
-            {
-                if (i == 0)
-                {
-                    Console.Write("When the competitor doesn't change the picked door, wins the car ");
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.Write(Competition.Statistics.WinningCountWhenStayOnThePickedDoor);
-                }
-                else
-                {
-                    Console.Write("When the competitor change the picked door, wins the car ");
-                    Console.ForegroundColor = ConsoleColor.Green;
-                    Console.Write(Competition.Statistics.WinningCountWhenChangeThePickedDoor);
-                }
+            WriteLine("When the competitor doesn't change the picked door, wins the car", ConsoleColor.Red, Competition.Statistics.WinningCountWhenStayOnThePickedDoor);
+            WriteLine("When the competitor change the picked door, wins the car", ConsoleColor.Green, Competition.Statistics.WinningCountWhenChangeThePickedDoor);
+        }
 
-                Console.ResetColor();
-                Console.Write(" times.");
-                Console.WriteLine();
-            }
+        private void WriteLine(string sentence, ConsoleColor counterColor, int winningStatistics)
+        {
+            Console.Write(sentence + " ");
+            Console.ForegroundColor = counterColor;
+            Console.Write(winningStatistics);
+            Console.ResetColor();
+            Console.WriteLine(" times.");
         }
     }
 }

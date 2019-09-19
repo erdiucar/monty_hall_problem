@@ -7,12 +7,12 @@ namespace monty_hall_problem
         public Door PickedDoor { get; private set; }
 
         // Pick a random door
-        public void PickADoor(Doors doors)
+        public void PickADoor(Stage stage)
         {
             Random random = new Random();
-            int pickedDoorNumber = random.Next(doors.Count);
+            int pickedDoorNumber = random.Next(stage.DoorsCount);
 
-            PickedDoor = doors.States[pickedDoorNumber];
+            PickedDoor = stage.Doors[pickedDoorNumber];
         }
     }
 }
