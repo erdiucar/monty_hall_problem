@@ -8,7 +8,7 @@ namespace monty_hall_problem
         {
             try
             {
-                Competition competition = new Competition(1000, 3);
+                Competition competition = new Competition(100, 3);
                 competition.Start();
 
                 CompetitionConsole competitionConsole = new CompetitionConsole(competition);

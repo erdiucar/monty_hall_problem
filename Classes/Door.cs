@@ -1,6 +1,3 @@
-using System;
-using System.Collections.Generic;
-
 namespace monty_hall_problem
 {
     public class Door
