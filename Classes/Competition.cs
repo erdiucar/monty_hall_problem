@@ -12,7 +12,7 @@ namespace monty_hall_problem
         {
             if (count < 1 || doorsCount < 3)
             {
-                throw new Exception("Count number must be over 1 and doors count number must be over 3.");
+                throw new ArgumentOutOfRangeException("Count number must be over 1 and doors count number must be over 3.");
             }
 
             Count = count;

@@ -16,7 +16,7 @@ namespace monty_hall_problem
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.Message);
+                Console.WriteLine("Error: {0}", e.Message);
             }
         }
     }
