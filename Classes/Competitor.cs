@@ -6,6 +6,7 @@ namespace monty_hall_problem
     {
         public Door PickedDoor { get; private set; }
         private Random random = new Random();
+        
         // Pick a random door
         public void PickADoor(Stage stage)
         {
