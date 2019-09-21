@@ -25,8 +25,8 @@ namespace monty_hall_problem
                         statistics.WinningCountWhenChangeThePickedDoor++;
                 }
 
-                CompetitionConsole CompetitionConsole = new CompetitionConsole(statistics);
-                CompetitionConsole.WriteStatistics();
+                MontyHallProblemConsole montyHallProblemConsole = new MontyHallProblemConsole(statistics);
+                montyHallProblemConsole.WriteStatistics();
             }
             catch (Exception e)
             {

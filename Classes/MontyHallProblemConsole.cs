@@ -2,11 +2,11 @@ using System;
 
 namespace monty_hall_problem
 {
-    public class CompetitionConsole
+    public class MontyHallProblemConsole
     {
         public Statistics Statistics { get; set; }
 
-        public CompetitionConsole(Statistics statistics)
+        public MontyHallProblemConsole(Statistics statistics)
         {
             Statistics = statistics;
         }
