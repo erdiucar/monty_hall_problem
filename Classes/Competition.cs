@@ -4,38 +4,26 @@ namespace monty_hall_problem
 {
     public class Competition
     {
-        public int Count { get; private set; }
-        public int DoorsCount { get; private set; }
-        public Statistics Statistics { get; private set; }
+        public Stage Stage { get; private set; }
+        public Competitor Competitor { get; private set; }
 
-        public Competition(int count, int doorsCount)
+        public Competition(int doorsCount)
         {
-            if (count < 1 || doorsCount < 3)
+            if (doorsCount < 3)
             {
-                throw new ArgumentOutOfRangeException("Count number must be over 1 and doors count number must be over 3.");
+                throw new ArgumentOutOfRangeException("The number of doors must be at least 3.");
+            }
+            else if (doorsCount > int.MaxValue)
+            {
+                throw new ArgumentOutOfRangeException();
             }
 
-            Count = count;
-            DoorsCount = doorsCount;
-            Statistics = new Statistics();
-        }
+            // Start a competition
+            Stage = new Stage(doorsCount);
+            Competitor = new Competitor();
 
-        public void Start()
-        {
-            // Competition repeat
-            for (int i = 0; i < Count; i++)
-            {
-                Stage stage = new Stage(DoorsCount);
-                Competitor competitor = new Competitor();
-
-                competitor.PickADoor(stage);
-
-                // If the car is behind the picked door, increase staying wins, else increase changing wins
-                if (competitor.PickedDoor.Number == stage.CarDoorNumber)
-                    Statistics.WinningCountWhenStayOnThePickedDoor++;
-                else
-                    Statistics.WinningCountWhenChangeThePickedDoor++;
-            }
+            // Competitor picks a door
+            Competitor.PickADoor(Stage);
         }
     }
 }

@@ -4,15 +4,29 @@ namespace monty_hall_problem
 {
     class Program
     {
+        private const int COMPETITION_REPEAT = 1000;
+        private const int DOORS_COUNT = 3;
+
         static void Main()
         {
             try
             {
-                Competition competition = new Competition(100, 3);
-                competition.Start();
+                Statistics statistics = new Statistics();
 
-                CompetitionConsole competitionConsole = new CompetitionConsole(competition);
-                competitionConsole.WriteStatistics();
+                for (int i = 0; i < COMPETITION_REPEAT; i++)
+                {
+                    // Start a new competition
+                    Competition competition = new Competition(DOORS_COUNT);
+
+                    // If the car is behind the picked door, increase staying wins, else increase changing wins
+                    if (competition.Competitor.PickedDoor.Number == competition.Stage.CarDoorNumber)
+                        statistics.WinningCountWhenStayOnThePickedDoor++;
+                    else
+                        statistics.WinningCountWhenChangeThePickedDoor++;
+                }
+
+                CompetitionConsole competitionStatisticsConsole = new CompetitionConsole(statistics);
+                competitionStatisticsConsole.WriteStatistics();
             }
             catch (Exception e)
             {

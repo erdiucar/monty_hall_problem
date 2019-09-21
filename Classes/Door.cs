@@ -11,4 +11,10 @@ namespace monty_hall_problem
             Behind = behind;
         }
     }
+
+    public enum Behind
+    {
+        Car,
+        Goat
+    }
 }
