@@ -2,7 +2,7 @@ using System;
 
 namespace monty_hall_problem
 {
-    public class Randomize
+    public static class Randomize
     {
         private static readonly Random random = new Random();
 
