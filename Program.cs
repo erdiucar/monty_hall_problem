@@ -4,7 +4,7 @@ namespace monty_hall_problem
 {
     class Program
     {
-        private const int COMPETITION_REPEAT = 1000;
+        private const int COMPETITION_REPEAT_COUNT = 1000;
         private const int DOORS_COUNT = 3;
 
         static void Main()
@@ -13,7 +13,7 @@ namespace monty_hall_problem
             {
                 Statistics statistics = new Statistics();
 
-                for (int i = 0; i < COMPETITION_REPEAT; i++)
+                for (int i = 0; i < COMPETITION_REPEAT_COUNT; i++)
                 {
                     // Start a new competition
                     Competition competition = new Competition(DOORS_COUNT);
