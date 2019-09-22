@@ -9,8 +9,7 @@ namespace monty_hall_problem
         // Pick a random door
         public void PickADoor(Stage stage)
         {
-            Random random = new Random();
-            int pickedDoorNumber = random.Next(stage.DoorsCount);
+            int pickedDoorNumber = Randomize.GetNumber(stage.DoorsCount);
 
             PickedDoor = stage.Doors[pickedDoorNumber];
         }

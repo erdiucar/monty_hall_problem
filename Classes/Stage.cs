@@ -18,8 +18,7 @@ namespace monty_hall_problem
                 Doors[i] = new Door(i, Behind.Goat);
             }
 
-            Random random = new Random();
-            var carDoorNumber = random.Next(doorsCount);
+            var carDoorNumber = Randomize.GetNumber(doorsCount);
 
             // Put the car behind a random door
             CarDoorNumber = carDoorNumber;
